@@ -6,8 +6,8 @@ This project is a simple Flask web application that uses Facebook as a social me
 
 1. **Clone the repository**
     ```
-    git clone https://github.com/<your-github-username>/<your-github-repo>.git
-    cd <your-github-repo>
+    git clone https://github.com/pralaphat/infoIAM
+    cd infoIAM
     ```
 
 2. **Create and activate a virtual environment (optional but recommended)**
@@ -21,8 +21,13 @@ This project is a simple Flask web application that uses Facebook as a social me
     pip install -r requirements.txt
     ```
 
-4. **Set environment variables**
-    You need to set environment variables for the Facebook App ID and App Secret.
+4. **Set up a Facebook App**
+    - Go to the [Facebook for Developers](https://developers.facebook.com/) website and create a new app.
+    - Follow the instructions to set up your app and obtain a client ID and client secret from Facebook.
+    - Configure the app settings, including the valid OAuth redirect URIs, and save the changes.
+
+5. **Set environment variables**
+    You need to set environment variables for your Facebook App ID and App Secret. These should be kept secret and not shared publicly.
     ```
     export FB_CLIENT_ID=<your-app-id>
     export FB_CLIENT_SECRET=<your-app-secret>
@@ -37,9 +42,13 @@ This project is a simple Flask web application that uses Facebook as a social me
 
 2. **Open a web browser and navigate to** `http://localhost:5000/`
 
+
 ## Deployment
 
 This app is ready to be deployed on platforms like Heroku, which support Python/Flask. For more information on deploying Flask apps, refer to the Flask documentation and the documentation for your chosen platform.
+
+Please note that you'll need to set up your Facebook App credentials (client ID and client secret) in your deployment environment or hosting platform.
+
 
 ## Note
 
