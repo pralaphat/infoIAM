@@ -1,6 +1,19 @@
 # infoIAM: Facebook Login Integration with Flask
 
-This project is a simple Flask web application that uses Facebook as a social media identity provider. It allows users to log in using their Facebook credentials, and once logged in, it displays the user's name, email, and profile picture.
+This is a Proof of Concept (POC) for a simple web application that uses Facebook as a social media identity provider. The application allows users to log in using their Facebook credentials and displays basic user profile information upon successful login.
+
+
+## Features
+- Login with Facebook: Users can authenticate themselves using their Facebook accounts.
+- Basic User Profile Information: Once logged in, the application displays the user's basic profile information, including their name, email, and profile picture.
+
+## Prerequisites
+Before running the application, make sure you have the following:
+
+- Python 3.x installed on your system
+- A Facebook developer account
+- A registered Facebook App with the necessary credentials (client ID and client secret)
+
 
 ## Setup
 
