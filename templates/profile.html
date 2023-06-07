@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>User Profile</title>
+    <title>Welcome, {{ user_info.name }}</title>
 </head>
 <body>
     <h1>Welcome, {{ user_info.name }}</h1>
-    <p>ID: {{ user_info.id }}</p>
-    <p>Email: {{ user_info.email }}</p>
+    {% if user_info.email %}
+    <p>Your email is: {{ user_info.email }}</p>
+    {% endif %}
+    <p>Your Facebook ID is: {{ user_info.id }}</p>
 </body>
 </html>
