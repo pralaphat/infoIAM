@@ -1,6 +1,7 @@
 # infoIAM: Facebook Login Integration with Flask
 
 This is a Proof of Concept (POC) for a simple web application that uses Facebook as a social media identity provider. The application allows users to log in using their Facebook credentials and displays basic user profile information upon successful login.
+Access via https://infoiam.herokuapp.com/ (No need to deploy)
 
 
 ## Features
