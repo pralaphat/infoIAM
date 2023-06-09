@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8">
     <title>Login with Facebook</title>
+    <style>
+      body {
+          background-color: #f5f8fa;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+
+      .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      .login-box {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          padding: 40px;
+          width: 400px;
+      }
+
+      h1 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+
+      button {
+          width: 100%;
+          background-color: #1da1f2;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          padding: 12px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+      }
+</style>
 </head>
 <body>
-    <h1>Welcome to our application!</h1>
-    <p>Please log in to continue:</p>
-    <a href="{{ authorization_url }}"><button>Login with Facebook</button></a>
+  <div class="container">
+      <div class="login-box">
+          <h1>Login to Your Account</h1>
+            <a href="{{ authorization_url }}"><button>Login with Facebook</button></a>
+      </div>
+  </div>
 </body>
 </html>
